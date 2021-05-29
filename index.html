@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+<nav id="navbar">
+  <header id="header">Index</header>
+  <ul>
+    <li><a class="nav-link" href="#ASSEMBLY_LANGUAGE">ASSEMBLY LANGUAGE</a></li>
+    <li><a class="nav-link" href="#BASH">BASH</a></li>
+    <li><a class="nav-link" href="#C">C</a></li>
+    <li><a class="nav-link" href="#FORTRAN">FORTRAN</a></li>
+    <li><a class="nav-link" href="#JAVA">JAVA</a></li>
+    <li><a class="nav-link" href="#OTHERS">OTHERS</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="ASSEMBLY_LANGUAGE">
+    <header>ASSEMBLY LANGUAGE</header>
+      <article>
+        <p>This is the language that will get you the highest performing and most efficient software that is still human-readable. It’s so hard to write in that it only makes sense to use it for small parts of a programme that are performance-sensitive. You will find it in operating systems and 3D game engines.</p>
+
+        <p></p>
+        <pre><code>
+    global  _main
+    extern  _printf
+
+    section .text
+_main:
+    push    message
+    call    _printf
+    add     esp, 4
+    ret
+message:
+    db  'Hello, World', 10, 0
+      </code></pre>
+    </article>
+  </section>
+  <section class="main-section" id="BASH">
+    <header>BASH</header>
+      <article>
+        <p>Used to interact with and manage Linux and Unix system at the command line.</p>
+        <p></p>
+        <pre><code>
+#!/bin/bash
+STR="Hello World!"
+echo $STR
+        </code></pre>
+      </article>
+  </section>
+  <section class="main-section" id="C">
+    <header>C</header>
+      <article>
+        <p>The most important language in the world. It’s what operating systems like Windows, MacOS, iOS, and Android are written in, as well as browsers and 3D games engines. Its syntax has influenced countless other programming languages.
+
+C maps closely to Assembly Language but you can write more complex programmes with it. If you need the highest performance possible without losing your mind then C is for you.
+
+C is also the language that made “Hello, World” examples popular.         </p>
+        <p></p>
+        <pre><code>
+#include &ltstdio.h&gt
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+        </code></pre>
+      </article>
+  </section>
+  <section class="main-section" id="FORTRAN">
+    <header>FORTRAN</header>
+      <article>
+        <p>Created in the 1950s to run on mainframe computers, it’s well suited for numerical and scientific work. It became standard in the scientific world where it’s still used today.</p>
+        <p></p>
+        <pre><code>
+program helloworld
+     print *, "Hello world!"
+end program helloworld
+        </code></pre>
+      </article>
+  </section>
+  <section class="main-section" id="JAVA">
+    <header>JAVA</header>
+      <article>
+        <p>Something that made Java special is that it was designed so you could write code once and then allow it to run on any operation system. Java is the most popular programming language in the world. It’s used to teach students and in large companies. All Android apps are written in Java.</p>
+        <p></p>
+        <pre><code>
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Prints the string to the console.
+    }
+}
+        </code></pre>
+      </article>
+  </section>
+  <section class="main-section" id="OTHERS">
+    <header>OTHERS</header>
+    <p>Some other languages</p>
+    <ul>
+      <li>C++</li>
+      <li>C#</li>
+      <li>PYTHON</li>
+      <li>HASKELL</li>
+      <li>LUA</li>
+    </ul>
+  </section>
+</main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
